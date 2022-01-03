@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.js">
+</head>
+<body>
+    <link rel="stylesheet" href="Immagini/salone.jpg">
+    <div class="container">
+    <header class="header">
+        <h1 class="title">Beauty salon form</h1>
+    <p id="description" class="description text-center">Thank you for choosing to fill in our survey 
+       this helps us to constantly improve our beauty salon</p>
+    </header>
+<form action="survey-form">
+    <div class="form-group">
+        <label for="name">NAME</label>
+        <input type="text" name="name" id="name" 
+        class="form-control" placeholder="enter your name"
+        required>
+    </div>
+        <div class="form-group">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" 
+            class="form-control" placeholder="enter your last-name"
+            required>
+        </div>
+        <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" id="email" 
+            class="form-control" placeholder="enter your email"
+            required>
+        </div>  
+        <div class="form-group">
+            <label for="email">PHONE NUMBER</label>
+            <input type="number" name="number" id="number" 
+            class="form-control" placeholder="enter your number"
+            required>
+        </div>  
+            <div class="form-group">
+                <label for="age">AGE <span class="clue"></span>(Optional)</label>
+                <input type="number" name="age" id="age" 
+                class="form-control" placeholder="enter your age"
+                min="18"
+                max="99">
+        </div>
+            <div class="form-group">
+        <p class="question-1">How did you get to know our beauty salon?</p>
+        <select name="choosing" id="dropdown" class="form-control"
+        required>
+        <option disabled selected value>Select one</option>
+        <option value="facebook">Facebook</option>
+        <option value="google">Google</option>
+        <option value="friends">Friends</option>
+        <option value="parents">Parents</option>
+        <option value="newspaper">Newspaper</option>
+        <option value="PreferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>
+        </div>  
+        <div class="form-group">
+        <p class="question-2">When did you last visit our beauty salon?</p>
+        <label>
+            <input 
+            type="radio"
+            name="user-recommed"
+            value="less-than-a-week"
+            class="input-radio"
+            checked>Less than a week 
+        </label>
+        <label>
+            <input 
+            type="radio"
+            name="user-recommed"
+            value="from-7-to-30-days"
+            class="input-radio"
+            >From 7 to 30 days
+        </label>
+        <label>
+            <input 
+            type="radio"
+            name="user-recommed"
+            value="from-1-to-6-months"
+            class="input-radio"
+            >from 1 to 6 months
+        </label>
+        <label>
+            <input 
+            type="radio"
+            name="user-recommed"
+            value="from-6-to-12-months"
+            class="input-radio"
+            >From 6 to 12 months
+        </label>
+        <label>
+            <input
+            type="radio"
+            name="user-recommed"
+            value="more-than-a-year"
+            class="input-radio"
+            />More than a year
+        </label>
+        <label>
+            <input
+            type="radio"
+            name="user-recommed"
+            value="never-been"
+            class="input-radio"
+            />Never been
+        </label>
+    </div>
+    <div class="form-group">
+        <p class="question-3">What do you like about our beauty salon?
+        <span class="clue">(Check all that apply)</span></p>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="haircuts"
+            class="input-checkbox">Haircuts
+        </label>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="manicure"
+            class="input-checkbox">Manicure
+        </label>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="pedicure"
+            class="input-checkbox">Pedicure
+        </label>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="waxing"
+            class="input-checkbox">Waxing
+        </label>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="facial-treatments"
+            class="input-checkbox">Facial treatments
+        </label>
+        <label>
+            <input 
+            type="checkbox"
+            name="prefer"
+            value="massage"
+            class="input-checkbox">Massage
+        </label>
+    </div>
+    <div class="form-group">
+      <p class="question-4">
+        We would love to hear from you to improve our beauty salon</p>
+      <textarea 
+        name="comment" 
+        id="comments" 
+        class="input-textarea"
+        placeholder="Enter you comment here..."
+        cols="50" 
+        rows="6"
+      >
+    </textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" 
+        id="submit" 
+        class="submit-button">Submit
+        </button>
+    </div>
+</form>
+</div>
+</body>
+</html>
